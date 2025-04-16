@@ -2,24 +2,24 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Cadastro Corretor</title>
+	<title>Cadastro de Corretor</title>
 	<style>
 		body{
 			text-align: center;
 		}
 		table{
 			text-align: left;
-    		margin-left: auto;
-    		margin-right: auto;
+    			margin-left: auto;
+    			margin-right: auto;
 		}
 		.input-container{
-           	text-align: center;
+           		text-align: center;
 		}
 		.data-display {
-           	 margin-top: 20px;
-            	 border-top: 1px solid #ccc;
-            	 padding-top: 15px;
-        }
+			 margin-top: 20px;
+			 border-top: 1px solid #ccc;
+			 padding-top: 15px;
+		}
     	</style>
 </head>
 <body>
@@ -28,16 +28,16 @@
     	<form id="dataForm" method="post">
 		<table>
 			<tr><td class="input-group" colspan="2">
-       			<label>Nome:</label><br>
-        		<input type="text" id="nome"name="nome" size="46" minlength="2" maxlength="70"  placeholder="Digite seu nome" required>
+       				<label>Nome:</label><br>
+        			<input type="text" id="nome" name="nome" size="46" minlength="2" maxlength="70"  placeholder="Digite seu nome" required>
 			</td></tr><br>
 			<tr><td>
-       			<label for="cpf">CPF:</label><br>
-        		<input type="text" id="cpf" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##',this)" placeholder="Digite seu CPF" required><br>
+       				<label for="cpf">CPF:</label><br>
+        			<input type="text" id="cpf" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##',this)" placeholder="Digite seu CPF" required><br>
 			</td>
 			<td>
-        		<label>CRECI:</label><br>
-        		<input type="text" id ="creci" name="creci" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1') minlength="2" maxlength="10" placeholder="Digite seu CRECI" required>
+        			<label>CRECI:</label><br>
+        			<input type="text" id ="creci" name="creci" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1') minlength="2" maxlength="10" placeholder="Digite seu CRECI" required>
 			</td></tr>
 			<tr><td colspan="2" class="input-container"><br>
 				<button type="submit" size="50" onclick="cadastro()">Enviar</button>
