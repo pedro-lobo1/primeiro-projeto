@@ -27,21 +27,27 @@
     	<h2>Dados do Corretor</h2>
     	<form id="dataForm" method="post">
 		<table>
-			<tr><td class="input-group" colspan="2">
-       				<label>Nome:</label><br>
-        			<input type="text" id="nome" name="nome" size="46" minlength="2" maxlength="70"  placeholder="Digite seu nome" required>
-			</td></tr><br>
-			<tr><td>
-       				<label for="cpf">CPF:</label><br>
-        			<input type="text" id="cpf" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##',this)" placeholder="Digite seu CPF" required><br>
-			</td>
-			<td>
-        			<label>CRECI:</label><br>
-        			<input type="text" id ="creci" name="creci" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1') minlength="2" maxlength="10" placeholder="Digite seu CRECI" required>
-			</td></tr>
-			<tr><td colspan="2" class="input-container"><br>
-				<button type="submit" size="50" onclick="cadastro()">Enviar</button>
-			</td></tr>
+			<div>
+				<tr><td class="input-group" colspan="2">
+       					<label>Nome:</label><br>
+        				<input type="text" id="nome" name="nome" size="46" minlength="2" maxlength="70"  placeholder="Digite seu nome" required>
+				</td></tr><br>
+			</div>
+			<div>
+				<tr><td>
+	       				<label for="cpf">CPF:</label><br>
+	        			<input type="text" id="cpf" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##',this)" placeholder="Digite seu CPF" required><br>
+				</td>
+				<td>
+        				<label>CRECI:</label><br>
+        				<input type="text" id ="creci" name="creci" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1') minlength="2" maxlength="10" placeholder="Digite seu CRECI" required>
+				</td></tr>
+			</div>
+			<div>
+				<tr><td colspan="2" class="input-container"><br>
+					<button type="submit" size="50" onclick="cadastro()">Enviar</button>
+				</td></tr>
+			</div>	
 		</table><br>
     	</form>
 	<script>
